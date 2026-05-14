@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wongso Game Portal</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      height:100vh;
+      background:linear-gradient(135deg,#0f172a,#020617,#111827);
+      overflow:hidden;
+      color:white;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .bg-glow{
+      position:absolute;
+      width:600px;
+      height:600px;
+      background:radial-gradient(circle,#38bdf8 0%, transparent 70%);
+      filter:blur(80px);
+      opacity:0.25;
+      animation:float 6s ease-in-out infinite;
+    }
+
+    @keyframes float{
+      0%,100%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-20px);
+      }
+    }
+
+    .container{
+      position:relative;
+      z-index:2;
+      text-align:center;
+      background:rgba(255,255,255,0.08);
+      backdrop-filter:blur(12px);
+      border:1px solid rgba(255,255,255,0.1);
+      padding:50px;
+      border-radius:25px;
+      width:90%;
+      max-width:500px;
+      box-shadow:0 0 40px rgba(0,0,0,0.5);
+    }
+
+    h1{
+      font-size:3rem;
+      margin-bottom:10px;
+      color:#38bdf8;
+      text-shadow:0 0 15px #38bdf8;
+    }
+
+    p{
+      margin-bottom:35px;
+      color:#cbd5e1;
+    }
+
+    .game-btn{
+      display:block;
+      width:100%;
+      padding:18px;
+      margin:15px 0;
+      border:none;
+      border-radius:15px;
+      font-size:1.1rem;
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+      text-decoration:none;
+      color:white;
+    }
+
+    .arras{
+      background:linear-gradient(45deg,#06b6d4,#3b82f6);
+    }
+
+    .scenexe{
+      background:linear-gradient(45deg,#8b5cf6,#ec4899);
+    }
+
+    .bloxd{
+      background:linear-gradient(45deg,#22c55e,#14b8a6);
+    }
+
+    .game-btn:hover{
+      transform:scale(1.05);
+      box-shadow:0 0 20px rgba(255,255,255,0.3);
+    }
+
+    .footer{
+      margin-top:25px;
+      font-size:0.9rem;
+      color:#94a3b8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-glow"></div>
+
+  <div class="container">
+    <h1>🎮 WONGSO</h1>
+    <p>Pilih gerbang permainanmu...</p>
+
+    <a class="game-btn arras" href="https://arras.io/" target="_blank">
+      🚀 Main Arras.io
+    </a>
+
+    <a class="game-btn scenexe" href="https://scenexe.io/" target="_blank">
+      🌀 Main Scenexe.io
+    </a>
+
+    <a class="game-btn bloxd" href="https://bloxd.io/" target="_blank">
+      🧱 Main Bloxd.io
+    </a>
+
+    <div class="footer">
+      Wongso Portal • Mode Nongkrong Aktif ☕
+    </div>
+  </div>
+
+</body>
+</html>
